@@ -1,0 +1,96 @@
+.big_carousel
+    width: 100%
+    margin: 0 auto
+    padding: 0
+    height: auto
+    position: relative
+    &__item1,
+    &__item2,
+    &__item3,
+    &__item4,
+    &__item5
+        height: 880px
+        width: 100%
+        background-color: #eb6397s
+        background-size: auto 100%
+        background-repeat: no-repeat
+        background-position: center
+        padding: 250px 40px 0px
+        text-align: center
+        @media only screen and (max-width: 560px)
+            width: 80%
+            padding: 15/1200*100%
+            padding-top: 85px
+    &__item1
+        background-image: url("../img/big_carousel/big_carousel_01.png")
+    &__item2
+        background-image: url("../img/big_carousel/big_carousel_02.png")
+    &__item3
+        background-image: url("../img/big_carousel/big_carousel_03.png")
+    &__item4
+        background-image: url("../img/big_carousel/big_carousel_04.png")
+    &__item5
+        background-image: url("../img/big_carousel/big_carousel_05.png")
+    &__title
+        color: #ffffff
+        font: 78px/88px 'Lato'
+        font-weight: 900
+        letter-spacing: 4.68px
+        text-transform: uppercase
+        padding-bottom: 30px
+        text-shadow: 1px 1px 2px #a3b1bf
+        @media only screen and (max-width: 560px)
+            font: 42px/88px 'Lato'
+    &__graph
+        color: #a3b1bf
+        font: 24px/33px "Source Sans Pro"
+        font-weight: 400
+        letter-spacing: 0.48px
+        padding-bottom: 63px
+    &__button
+        width: 295px
+        height: 65px
+        box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15)
+        background-color: #00bc9c
+        color: #ffffff
+        font: 18px "Source Sans Pro"
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 0.45px
+        cursor: pointer
+        outline: none
+        outline-color: transparent
+        border: 0
+// .slick-arrow
+//     z-index: 2000
+//     padding: 0
+//     margin: 0
+// .slick-prev
+//     &::before
+//         margin-right: -52px
+//         color: red
+//         background-color: none
+// .slick-next
+//     &::before
+//         margin-left: -52px
+//         color: red
+//         background-color: none
+
+.slick-next,
+.slick-prev
+    background: none
+    color: #a3b1bf
+    font-size: 46px
+    cursor: pointer
+
+.slick-arrow
+    position: absolute
+    top: 50%
+    transform: translate(0, -50%)
+    z-index: 25
+
+.slick-prev
+    left: 20px
+
+.slick-next
+    right: 20px

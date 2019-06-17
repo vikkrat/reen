@@ -1,0 +1,47 @@
+.footer_ending
+    @include aligning
+    min-height: 83px
+    background-color: #283645
+    position: relative
+    vertical-align: middle
+    &_wrapper
+        @include centering
+        @include flexing
+        min-height: 83px
+        align-items: center
+        color: #707e8c
+        font: 14px/22px "Source Sans Pro"
+        font-weight: 400
+        letter-spacing: 0.28px
+        @media only screen and (max-width: 1200px)
+            flex-direction: column-reverse
+            justify-content: center
+    &__nav
+        &_link
+            color: #707e8c
+            text-decoration: none
+            margin-right: 10px
+            &:last-of-type
+                margin-right: 0
+                &::after
+                    content: ''
+                    margin-left: 0
+            &::after
+                content: '•'
+                margin-left: 10px
+            &:hover
+                color: #ffffff
+                font-size: 16px
+                transition: all 0.3s ease
+        @media only screen and (max-width: 640px)
+            display: none
+    &__scroll
+        font-size: 24px
+        padding: 10px
+        color: #ffffff
+        background-color: #506a85
+        border-radius: 3px
+        position: absolute
+        bottom: 20px
+        right: 20px
+        cursor: pointer

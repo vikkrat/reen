@@ -1,0 +1,59 @@
+.header
+    @include aligning
+    min-height: 40px
+    box-shadow: 0 1px 0 #e6e9ed
+    background-color: #f5f7fb
+    &_wrapper
+        @include centering
+        height: auto
+        min-height: 40px
+        @include flexing
+        @media only screen and (max-width: 1200px)
+            width: 80%
+            padding: 15/1200*100%
+.contacts_tel,
+.contacts_social
+    width: 50%
+
+
+.contacts_tel
+    display: flex
+    justify-content: flex-start
+    flex-wrap: wrap
+    align-items: center
+    @media only screen and (max-width: 710px)
+        flex-direction: column-reverse
+        align-items: flex-start
+    @media only screen and (max-width: 540px)
+        width: 100%
+        flex-direction: row
+        justify-content: space-evenly
+    &__item
+        width: 28%
+        @media only screen and (max-width: 1200px)
+            width: 40%
+        @media only screen and (max-width: 710px)
+            width: 50%
+            padding-bottom: 15px
+    &__itemlft
+        @media only screen and (max-width: 540px)
+            text-align: left
+    &__itemrght
+        @media only screen and (max-width: 540px)
+            text-align: right
+    &__graph
+        color: #506a85
+        font: 12px "Source Sans Pro"
+        font-weight: 400
+.contacts_social
+    display: flex
+    justify-content: flex-end
+    flex-wrap: no-wrap
+    align-items: center
+    &__img
+        padding: 0 10px
+    @media only screen and (max-width: 540px)
+        width: 80%
+        padding: 15/1200*100%
+        justify-content: center
+        margin: 0 auto

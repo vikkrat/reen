@@ -1,0 +1,98 @@
+.footer
+    @include aligning
+    min-height: 447px
+    background-color: #2f4052
+    &_wrapper
+        @include centering
+        height: auto
+        min-height: 447px
+        padding-top: 75px
+        @include flexing
+        align-items: flex-start
+        color: #a3b1bf
+        @media only screen and (max-width: 1200px)
+            padding: 5px
+            justify-content: space-around
+        @media only screen and (max-width: 620px)
+            justify-content: center
+            padding: 15/1200*100%
+    &__item
+        width: 260px
+        height: auto
+        @media only screen and (max-width: 1200px)
+            width: 40%
+            margin: 20px 0
+        @media only screen and (max-width: 620px)
+            width: 80%
+            
+        &_logo
+            padding-bottom: 26px
+        &_img
+            // margin: 1.5px
+        &_ico
+            padding-right: 20px    
+        &_title
+            color: #ffffff
+            font: 16px/22px 'Lato'
+            font-weight: 700
+            text-transform: uppercase
+            letter-spacing: 1.6px
+            padding-bottom: 26px
+        &_graph
+            color: #a3b1bf
+            font: 14px/22px "Source Sans Pro"
+            font-weight: 400
+            letter-spacing: 0.28px
+            padding-bottom: 26px
+        &_link
+            font: 15px "Source Sans Pro"
+            font-weight: 700
+            letter-spacing: 0.3px
+            color: #a3b1bf
+            text-decoration: none
+            cursor: pointer
+        &_fieldset
+            width: 255px
+            height: 40px
+            background-color: #ffffff
+            opacity: 0.85
+            border-radius: 5px
+            // line-height: 40px
+            text-align: right
+            padding: 5px
+            // display: flex
+            // justify-content: space-around
+            @media only screen and (max-width: 620px)
+                width: 100%
+        &_input
+            width: 175/270*100%
+            height: 14px
+            color: #828e99
+            font: 14px/22px "Source Sans Pro"
+            font-weight: 400
+            letter-spacing: 0.28px
+            border: 0
+            background-color: transparent
+            outline: none
+            text-align: left
+        &_subscribe
+            width: 88/270*100%
+            height: 30px
+            box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15)
+            background-color: #00bc9c
+            border-radius: 5px
+            border: 0
+            outline: none
+            color: #ffffff
+            font: 13px "Source Sans Pro"
+            font-weight: 700
+            text-transform: uppercase
+            letter-spacing: 0.39px
+            cursor: pointer
+    &__item_works
+        width: 255px
+        height: 180px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-content: space-around

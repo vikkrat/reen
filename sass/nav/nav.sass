@@ -1,0 +1,64 @@
+.nav
+    @include aligning
+    min-height: 113px
+    background-color: #ffffff
+    &_wrapper
+        position: relative
+        @include centering
+        height: auto
+        min-height: 113px
+        @include flexing
+        align-items: center
+        @media only screen and (max-width: 1200px)
+            width: 80%
+            padding: 15/1200*100%
+    &__item
+        color: #506a85
+        font: 15px "Source Sans Pro"
+        font-weight: 700
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 10px 0
+        @media only screen and (max-width: 1200px)
+            width: 100%
+            // justify-content: center
+        &_link
+            text-transform: uppercase
+            text-decoration: none
+            padding: 5px
+            margin: 0 22px
+            color: #506a85
+            &:last-of-type
+                margin-right: 0
+            &:first-of-type
+                margin-left: 0
+            &:hover
+                background-color: #506a85
+                opacity: 0.83
+                border-radius: 3px
+                color: #00bc9c
+                text-transform: uppercase
+                transition: all 0.5s ease
+    &__menu
+        @media only screen and (max-width: 865px)
+            display: none
+    &__logo
+        margin-right: 80px
+        &:hover
+            transform: rotate(360deg)
+            transition: all 0.5s ease
+    &__input
+        border: 1
+        opacity: 0.4
+        background-color: transparent
+        outline: none
+        height: 30px
+        text-align: left
+        padding: 3px
+        width: 100%
+        border-radius: 5px
+        color: #506a85
+    &__search
+        margin: 4px 5px
+        height: 12px
